@@ -10,7 +10,7 @@ phases:
       - ./build.sh
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed `date`
 artifacts:
   files:
     - backend/target/speech-helper-0.0.1-SNAPSHOT.jar
