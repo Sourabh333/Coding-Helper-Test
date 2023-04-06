@@ -1,0 +1,17 @@
+Copy code
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: 11
+      nodejs: 14
+  build:
+    commands:
+      - ./run.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - backend/target/speech-helper-0.0.1-SNAPSHOT.jar
