@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-      nodejs: 14
+      nodejs: 12
   build:
     commands:
       - ./run.sh
